@@ -1,0 +1,34 @@
+.somos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+    &__tarjeta{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+
+.figura{
+    &__leyenda{
+        text-align: center;
+        margin-top: .25rem;
+    }
+    &__img{
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        width: 100%;
+        height: auto;
+    }
+    &__h4{
+        font-size: 1.25rem;
+        text-align: center;
+        font-weight: 900;
+        margin: 0rem;
+    }
+    &__h5{
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 700;
+    }
+}

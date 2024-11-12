@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@100..900&display=swap");
+.header__titulo {
+  font-size: clamp(18px, 5vw, 48px);
+}
+
+.principal {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 150px minmax(120px, 1fr);
+}
+
+.somos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+}
+.somos__tarjeta {
+  display: flex;
+  flex-direction: column;
+}
+
+.figura__leyenda {
+  text-align: center;
+  margin-top: 0.25rem;
+}
+.figura__img {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+.figura__h4 {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 900;
+  margin: 0rem;
+}
+.figura__h5 {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px 25px;
+  align-items: center;
+}
+.footer_redesSociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px 25px;
+}/*# sourceMappingURL=main.css.map */

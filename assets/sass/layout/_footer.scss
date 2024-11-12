@@ -1,0 +1,14 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 25px;
+    align-items: center;
+    &_redesSociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 25px 25px;
+    }
+}
+
