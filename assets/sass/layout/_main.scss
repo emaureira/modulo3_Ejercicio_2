@@ -1,3 +1,50 @@
+.principal{
+  height: 62vh;
+  &__contenido{
+    overflow: scroll;
+    margin-left: 1.5rem;
+    &-contacto{
+        display: flex;
+        gap: 2rem;
+        flex-basis: 0;
+        flex-grow: 999;
+        min-width: 40%;
+        overflow: scroll;
+        margin-left: 1.5rem;
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+  }
+}
+.bienvenido-float{
+    float: left;
+    margin-right: 5%;
+}
+
+.menu{
+    list-style-type: none;
+    &_item{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        &-btn{
+            background-color: red;
+            color: white;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 8px;
+            box-shadow: 5px 5px 0px 0px black;
+        }
+    }
+}
+.item{
+    &__link{
+        text-decoration: none;
+        font-size: clamp(18px,5vw,20px);
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
 .somos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -5,8 +52,32 @@
     &__tarjeta{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    h4{
+        text-align: center;
+    }
+    figure{
+        text-align: center;
+        font-size: clamp(22px, 5vw, 35px);
+    }
     }
    
+}
+.contenido{
+    &__mapa{
+        background-color: red;
+        border: 2px red solid;
+      
+        @include tablet{
+           background-color: blue;
+           border: 2px blue solid;
+        }
+        @include mobile{
+            background-color: aqua;
+            border: 2px aqua solid;
+        } 
+    }
+    
 }
 
 .figura{
@@ -17,18 +88,26 @@
     &__img{
         aspect-ratio: 1 / 1;
         border-radius: 50%;
-        width: 100%;
+        width: 50%;
         height: auto;
     }
     &__h4{
-        font-size: 1.25rem;
         text-align: center;
         font-weight: 900;
         margin: 0rem;
+        line-height: 4rem;
     }
     &__h5{
-        font-size: 1rem;
         text-align: center;
         font-weight: 700;
+        line-height: 4rem;
     }
+
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin: 1rem 1rem;
 }

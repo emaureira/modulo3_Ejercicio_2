@@ -9,28 +9,31 @@
 </head>
 <body>
     <header tabindex="1" class="header">
-        <h1 class="header__titulo" id="header_titulo">Hospital Nombre</h1>
-        <figure>
-            <img src="" alt="">
-            <figcaption>Servicios Rápidos</figcaption>
+        <figure class="header__logo">
+            <i class="bi bi-hospital"></i>
         </figure>
+        <h1 class="header__titulo">Hospital Nombre</h1>
     </header>
     <main class="principal">
         <aside tabindex="2">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Index</a></li>
-                    <li><a href="equipo.html">Quienes Somos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+            <nav class="principal__menu">
+                <ul class="menu">
+                    <li class="menu_item"><a class="item__link" href="index.html">Index</a></li>
+                    <li class="menu_item"><a class="item__link" href="equipo.html">Quienes Somos</a></li>
+                    <li class="menu_item"><a class="item__link" href="contacto.html">Contacto</a></li>
+                    <li class="menu_item-btn"><a class="item__link" href="reservar-cita.html">Reservar Cita</a></li>
                 </ul>
             </nav>
         </aside>
-        <div>
-            <section tabindex="3">
-                <article>
+        <div class="principal__contenido">
+            <section tabindex="3" class="contenido__inicial">
+                <article class="incial_bienvenido">
                     <h2>Bienvenidos</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure tempore provident sint inventore labore deserunt. Vitae necessitatibus labore accusamus animi aspernatur reiciendis sequi quia. Ipsum ad maiores iusto aspernatur quos!
+                    <p class="bienvenido-float">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure tempore provident sint inventore labore deserunt. Vitae necessitatibus labore accusamus animi aspernatur reiciendis sequi quia. Ipsum ad maiores iusto aspernatur quos!
                     Soluta reiciendis, quod odio sunt omnis sapiente laborum iusto animi voluptas debitis asperiores. Veritatis corporis maxime eos doloremque consequuntur quisquam illo, sapiente minima itaque id laudantium asperiores, quo eveniet repellat?</p>
+                    <div class="bienvenido-video">
+                        <iframe width="360" height="203" src="https://www.youtube.com/embed/IeorneeDucQ?si=B1_tnyiQJTEzI3NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                     <h3>Mision:</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis impedit deleniti aut blanditiis soluta et provident incidunt expedita illo, natus saepe quam maiores ducimus? Omnis nisi dignissimos sint explicabo repellendus!</p>
                     <h3>Vision :</h3>
@@ -40,29 +43,26 @@
                <section tabindex="4">
                     <h2>Nuestros Servicios</h2>
                     <div class="somos">
-                        <article>
+                        <article class="somos__tarjeta">
                             <figure>
                                 <i class="bi bi-clipboard2-pulse-fill"></i>
-                                <figcaption>Urgencias</figcaption>
+                                
                             </figure>
                             <h4>Urgencias</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore enim modi possimus rem, voluptatum dicta dolorem, vitae, eos eligendi illum officiis alias. Mollitia, incidunt rem! Quaerat odio aliquam repellat dolor.</p>
                         </article>
-                        <article>
+                        <article class="somos__tarjeta">
                             <figure>
                                 <i class="bi bi-virus"></i>
-                                <figcaption>Exámenes</figcaption>
+                               
                             </figure>
                             <h4>Exámenes</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus atque saepe doloribus voluptates error nisi voluptas, explicabo dicta, laudantium odio, sed beatae mollitia. Voluptates adipisci esse, debitis quia quo nihil.</p>
                         </article>
-                        <article>
+                        <article class="somos__tarjeta">
                             <figure>
                                 <i class="bi bi-heart-pulse"></i>
-                                <figcaption>Cardiología</figcaption>
-                                <script>
-                                    console.log("aca en cardiologias");
-                                </script>
+                                
                             </figure>
                             <h4>Exámenes</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus atque saepe doloribus voluptates error nisi voluptas, explicabo dicta, laudantium odio, sed beatae mollitia. Voluptates adipisci esse, debitis quia quo nihil.</p>
@@ -73,21 +73,21 @@
                <section tabindex="5">
                 <h2>Testimonios</h2>
                 <div class="somos">
-                    <article>
+                    <article class="somos__tarjeta">
                         <h4>Juan</h4>
                         <div>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, quae laboriosam nemo voluptate doloribus consectetur corporis fugiat aspernatur, mollitia porro delectus maiores rerum sed commodi facilis modi obcaecati tempore voluptatem.</p>
                             <p>Dolorum assumenda nostrum, dignissimos placeat accusamus libero commodi labore, itaque sint debitis ducimus. Earum, nulla saepe. Nam blanditiis reprehenderit nostrum autem saepe! Laborum quisquam obcaecati modi? Rem officiis minima hic.</p>
                         </div>
                     </article>
-                    <article>
+                    <article class="somos__tarjeta">
                         <h4>Roxana</h4>
                         <div>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, quae laboriosam nemo voluptate doloribus consectetur corporis fugiat aspernatur, mollitia porro delectus maiores rerum sed commodi facilis modi obcaecati tempore voluptatem.</p>
                             <p>Dolorum assumenda nostrum, dignissimos placeat accusamus libero commodi labore, itaque sint debitis ducimus. Earum, nulla saepe. Nam blanditiis reprehenderit nostrum autem saepe! Laborum quisquam obcaecati modi? Rem officiis minima hic.</p>
                         </div>
                     </article>
-                    <article>
+                    <article class="somos__tarjeta">
                         <h4>Ariel</h4>
                         <div>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, quae laboriosam nemo voluptate doloribus consectetur corporis fugiat aspernatur, mollitia porro delectus maiores rerum sed commodi facilis modi obcaecati tempore voluptatem.</p>
@@ -102,15 +102,14 @@
     </main>
     <footer class="footer">
         <section class="footer__direccion">
-            ubicacion #sin Numero, Comuna , Region
+            ubicacion: #sin Numero, Comuna , Region
         </section>
         <section class="footer_redesSociales">
-            <article><i class="bi bi-facebook"></i></article>
-            <article><i class="bi bi-youtube"></i></article>
-            <article><i class="bi bi-instagram"></i></article>
-            <article><a href="tel:+5699999999"><i class="bi bi-telephone"></i> +5699999</a></article>
+            <article class="redesSociales__icono"><i class="bi bi-facebook"></i></article>
+            <article class="redesSociales__icono"><i class="bi bi-youtube"></i></article>
+            <article class="redesSociales__icono"><i class="bi bi-instagram"></i></article>
+            <article class="redesSociales__icono"><a class="icono__link" href="tel:+5699999999"><i class="bi bi-telephone"></i> +5699999</a></article>
         </section>
     </footer>
-    <script src="./assets/js/script.js"></script>
 </body>
 </html>
