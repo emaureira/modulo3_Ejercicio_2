@@ -2,15 +2,17 @@
     display: flex;
     justify-content: between;
     align-items: center;
+    margin: 1rem 1rem;
     &__titulo{
-    
     background: linear-gradient(to bottom, red, rgb(63, 2, 2));
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-left: 2rem;
     }
     &__logo{
         font-size: clamp(22px, 5vw, 48px);
+        padding-left: 1rem;
     }
 }
 
@@ -18,7 +20,7 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 180px minmax(120px, 1fr);
-    $primary: #3c3c3c; // Cambia el color primario
+     // Cambia el color primario
     color: $primary;
     @include mobile{
         grid-template-columns: auto;
